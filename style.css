@@ -1,0 +1,523 @@
+.table tbody>tr>th {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #d0d0d0;
+  background-color: #f9f9f9;
+  height: 19px;
+  padding: 0px;
+  background-image: url(https://www.sitepoint.com/demos/extjs_desktop/js/ext-3.0.0/resources/images/default/grid/grid3-hrow.gif);
+}
+
+.table tbody>tr>th:hover {
+  border-left-color: #aaccf6;
+  border-right-color: #aaccf6;
+  background-color: #99bbe8;
+  height: 19px;
+  background-image: url(https://www.sitepoint.com/demos/extjs_desktop/js/ext-3.0.0/resources/images/default/grid/grid3-hrow-over.gif);
+}
+
+.table tbody>tr:hover {
+  border: 1px solid #dddddd;
+  background: #efefef url(http://examples.extjs.eu/ext/resources/images/default/grid/row-over.gif) repeat-x left top;
+}
+
+.table tbody>tr>td,
+.table tbody>tr>th {
+  height: 19px;
+  padding: 3px 3px 3px 5px;
+}
+
+.panel-primary>.panel-heading {
+  padding: 5px;
+  background: transparent url(http://examples.extjs.eu/ext/resources/images/default/window/top-bottom.png) repeat-x 0 0;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.panel-primary {
+  background: #dfe8f6;
+  border-top: 0px;
+}
+
+.panel-default {
+  background: white;
+  border-top: 0px;
+  border-radius: 0px;
+  border-color: #99bbe8;
+}
+
+.panel-default>.panel-body {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.panel-default>.panel-heading {
+  color: #15428b;
+  background-color: WHITE;
+  border-color: WHITE;
+  border-bottom: 0px;
+  font: bold 11px tahoma, arial, verdana, sans-serif;
+  border: 1px solid #99bbe8;
+  line-height: 15px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent url(http://examples.extjs.eu/ext/resources/images/default/panel/white-top-bottom.gif) repeat-x 0 -1px;
+  overflow: hidden;
+  zoom: 1;
+  padding: 5px 3px 4px 5px;
+  border-radius: 0px;
+}
+
+.panel-primary>.panel-heading {
+  color: #15428b;
+  background-color: WHITE;
+  border-color: WHITE;
+  border-bottom: 0px;
+  font: bold 11px tahoma, arial, verdana, sans-serif;
+  padding: 5px 0 4px 5px;
+}
+
+.panel-primary>.panel-body {
+  border: 1px solid #99bbe8;
+  padding: 5px;
+  margin: 5px;
+  font: normal 11px tahoma, arial, helvetica, sans-serif;
+}
+
+.panel-primary>.panel-body>.table {
+  margin: -5px;
+}
+
+.table {
+  background-color: white;
+  margin-bottom: 0px;
+}
+
+.btn {
+  padding: 2px 10px 2px 10px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 11px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #ffffff;
+  background-image: url(http://stefanbirkner.github.io/glossy-buttons/img/gloss.png);
+  background-position: left center;
+  background-repeat: repeat-x;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-inverse {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #444444;
+  background-image: url(http://stefanbirkner.github.io/glossy-buttons/img/gloss.png);
+  background-position: left center;
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ee5f5b;
+  background-image: url(http://stefanbirkner.github.io/glossy-buttons/img/gloss.png);
+  background-position: left center;
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-warning {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fbb450;
+  background-image: url(http://stefanbirkner.github.io/glossy-buttons/img/gloss.png);
+  background-position: left center;
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #62c462;
+  background-image: url(http://stefanbirkner.github.io/glossy-buttons/img/gloss.png);
+  background-position: left center;
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bc0de;
+  background-image: url(http://stefanbirkner.github.io/glossy-buttons/img/gloss.png);
+  background-position: left center;
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0088cc;
+  background-image: url(http://stefanbirkner.github.io/glossy-buttons/img/gloss.png);
+  background-position: left center;
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.panel {
+  border-radius: 0px;
+}
+
+.btn-primary:hover {}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {}
+
+.nav>li>a {
+  padding: 5px;
+  font-size: 11px;
+}
+
+.nav-tabs>li>a {
+  border-radius: 4px 4px 0 0;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > li.active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
+  border-left: 1px solid #99bbe8;
+  border-right: 1px solid #99bbe8;
+  border-bottom: 0px solid #99bbe8;
+  background: transparent url(http://examples.extjs.eu/ext/resources/images/default/tabs/tabs-sprite.gif) repeat right -251px;
+  font-weight: bold;
+  color: #15428b;
+  background-color: #dfe8f6;
+}
+
+.nav-tabs>li>a {
+  line-height: 1.428571429;
+  border: 1px solid #99bbe8;
+  border-radius: 4px 4px 0 0;
+  background: #dfe8f6;
+  background: transparent url(http://examples.extjs.eu/ext/resources/images/default/tabs/tabs-sprite.gif) repeat right -201px;
+  font-weight: normal;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > .open > a,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+  line-height: 1.428571429;
+  border: 1px solid #99bbe8;
+  border-radius: 4px 4px 0 0;
+  background: #dfe8f6;
+  background: transparent url(http://examples.extjs.eu/ext/resources/images/default/tabs/tabs-sprite.gif) repeat right -151px;
+  font-weight: normal;
+}
+
+.modal-backdrop.in {
+  opacity: 0;
+}
+
+.panel-footer {
+  border-color: #a9bfd3;
+  border-style: solid;
+  border: 1px;
+  border-top: 1px solid #a9bfd3;
+  display: block;
+  padding: 2px;
+  background: #d0def0 url(http://examples.extjs.eu/ext/resources/images/default/toolbar/bg.gif) repeat-x top left;
+  position: relative;
+  zoom: 1;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.form-control {
+  background: #fff url(http://examples.extjs.eu/ext/resources/images/default/form/text-bg.gif) repeat-x 0 0;
+  border: 1px solid #B5B8C8;
+  line-height: 18px;
+  vertical-align: middle;
+  height: 22px;
+  padding: 3px 3px;
+  border-radius: 0px;
+  font-size: 11px;
+}
+
+.form-horizontal .control-label {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-horizontal .control-label,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+
+.modal-dialog>.panel {
+  box-shadow: 0px 0px 10px 1px rgba(0, 1, 1, .5);
+}
+
+.table-responsive {
+  width: auto;
+}
+
+.ui-layout-pane>.panel {
+  margin: 0px;
+  padding: 0px;
+}
+
+.panel-group .panel {
+  border-radius: 0px;
+}
+
+.panel-group .panel+.panel {
+  margin-top: 0px;
+}
+
+.panel-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.panel-body {
+  padding: 5px;
+  font-size: 11px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.ui-layout-toggler-north-open {
+  background-image: url(http://examples.extjs.eu/ext/resources/images/default/layout/mini-top.gif);
+  background-repeat: no-repeat;
+  background-color: #dfe8f6;
+  border: 0px;
+  background-position: center;
+}
+
+.ui-layout-toggler-north-closed {
+  background-image: url(http://examples.extjs.eu/ext/resources/images/default/layout/mini-bottom.gif);
+  background-repeat: no-repeat;
+  background-color: #dfe8f6;
+  border: 0px;
+  background-position: center;
+}
+
+.ui-layout-toggler-south-open {
+  background-image: url(http://examples.extjs.eu/ext/resources/images/default/layout/mini-bottom.gif);
+  background-repeat: no-repeat;
+  background-color: #dfe8f6;
+  border: 0px;
+  background-position: center;
+}
+
+.ui-layout-toggler-south-closed {
+  background-image: url(http://examples.extjs.eu/ext/resources/images/default/layout/mini-top.gif);
+  background-repeat: no-repeat;
+  background-color: #dfe8f6;
+  border: 0px;
+  background-position: center;
+}
+
+.ui-layout-toggler-west-open {
+  background-image: url(http://examples.extjs.eu/ext/resources/images/default/layout/mini-left.gif);
+  background-repeat: no-repeat;
+  background-color: #dfe8f6;
+  border: 0px;
+  background-position: center;
+}
+
+.ui-layout-toggler-west-closed {
+  background-image: url(http://examples.extjs.eu/ext/resources/images/default/layout/mini-right.gif);
+  background-repeat: no-repeat;
+  background-color: #dfe8f6;
+  border: 0px;
+  background-position: center;
+}
+
+.ui-layout-toggler-east-open {
+  background-image: url(http://examples.extjs.eu/ext/resources/images/default/layout/mini-right.gif);
+  background-repeat: no-repeat;
+  background-color: #dfe8f6;
+  border: 0px;
+  background-position: center;
+}
+
+.ui-layout-toggler-east-closed {
+  background-image: url(http://examples.extjs.eu/ext/resources/images/default/layout/mini-left.gif);
+  background-repeat: no-repeat;
+  background-color: #dfe8f6;
+  border: 0px;
+  background-position: center;
+}
+
+.ui-layout-center>.panel {
+  height: 100%;
+}
+
+.bootbox>.modal-dialog>.modal-content>.modal-header {
+  zoom: 1;
+  padding: 5px;
+  background: url(http://examples.extjs.eu/ext/resources/images/default/window/top-bottom.png) 0px 0px repeat-x transparent;
+  overflow: hidden;
+  color: rgb(21, 66, 139);
+  background-color: white;
+  border-color: white white white;
+  border-bottom: 0px;
+  padding: 5px 5px 4px 5px;
+}
+
+.bootbox>.modal-dialog>.modal-content {
+  background: rgb(223, 232, 246);
+  border-radius: 0px;
+}
+
+.bootbox>.modal-dialog>.modal-content>.modal-header>.modal-title {
+  font: bold 11px tahoma, arial, verdana, sans-serif;
+}
+
+.bootbox>.modal-dialog>.modal-content>.modal-footer {
+  margin: 0px;
+  padding: 5px;
+  border-top: 1px solid rgb(233, 242, 256);
+}
+
+.bootbox>.modal-dialog>.modal-content>.modal-body {
+  padding: 5px;
+  margin: 5px;
+  font: 11px tahoma, arial, helvetica, sans-serif;
+}
+
+.alert {
+  padding: 5px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.pull-bottom {
+  bottom: 0px;
+  position: absolute;
+}
+
+.panel-default > .panel-heading {
+  border-bottom: 0px;
+}
+
+.with-nav-tabs>.panel-heading {
+  padding-bottom: 1px !important;
+}
+
+.glyphicon {
+  padding-right: 5px;
+}
+
+.input-group-addon {
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.input-group-btn>.btn {
+  padding: 0px 6px 0px 6px;
+}
+
+.navbar {
+  background-color: #dfe8f6;
+  border-radius: 0px;
+  background: transparent url(http://examples.extjs.eu/ext/resources/images/default/panel/white-top-bottom.gif) repeat-x 0 -100px;
+  margin-bottom: 0px;
+}
+
+.navbar-nav {
+  margin: 5px 15px;
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #15428b;
+  background-color: #dfe8f6;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.open>a {
+  color: #15428b;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: rgb(223, 232, 246);
+}
+
+.navbar-brand {
+  float: left;
+  padding: 10px 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.navbar-form {
+  margin-top: 4px;
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+  font-size: 12px;
+  padding: 3px 0px;
+  border-color: #428bca;
+}
+
+.dropdown-menu>li>a {
+  padding: 3px 10px;
+}
+
+.modal {
+  position: absolute;
+}
+
+.modal-backdrop {
+  display: none;
+  visibility: none;
+}
