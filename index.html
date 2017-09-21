@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <link rel="stylesheet" type="text/css" href="layout-default.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src='resizable-tables.js'></script>
+  <script type="text/javascript" src="jquery-ui.js"></script>
+  <script type="text/javascript" src="jquery.layout.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="bootbox.min.js"></script>
+  <script type="text/javascript" src="jquery.bootstrap-growl.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="tab.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="glosybuttons.css">
+  <title>Bootstrap 3.0 - Table by KyleMit</title>
+</head>
+
+
+<body class=''>
+  <div class="ui-layout-north">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tint"></span>ocean ui</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="menu1" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="menu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Javascript:void(0)" onclick="zoomIn()">+</a></li>
+            <li><a href="Javascript:void(0)" onclick="zoomOut()">-</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" id="dLabel" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </div>
+
+
+  <div class="ui-layout-west">
+
+
+
+
+    <div class="panel with-nav-tabs panel-default">
+
+      <div class="panel-heading">
+
+        <ul class="nav nav-tabs">
+
+          <li class="active"><a href="#tab1defaultmenu" data-toggle="tab">Menu</a></li>
+
+          <li><a href="#tab2defaultmenu" data-toggle="tab">Ststem Tree</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+    <div class="panel-body no-padding">
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="tab1defaultmenu">
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                            </span>Content</a>
+                        </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in no-padding">
+                <div class="panel-body no-padding">
+                  <table class="table">
+                    <tr>
+                      <td>
+                        <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td>
+                        <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">News</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="glyphicon glyphicon-file text-info"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="glyphicon glyphicon-comment text-success"></span><a href="http://www.jquery2dotnet.com">Comments</a>
+                        <span class="label label-default">42</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                            </span>Modules</a>
+                        </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse no-padding">
+                <div class="panel-body no-padding">
+                  <table class="table">
+                    <tr>
+                      <td>
+                        <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="http://www.jquery2dotnet.com">Invoices</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="http://www.jquery2dotnet.com">Shipments</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="http://www.jquery2dotnet.com">Tex</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                            </span>Account</a>
+                        </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse no-padding">
+                <div class="panel-body no-padding">
+                  <table class="table">
+                    <tr>
+                      <td>
+                        <a href="http://www.jquery2dotnet.com">Change Password</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                            Delete Account</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                            </span>Reports</a>
+                        </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse no-padding">
+                <div class="panel-body no-padding">
+                  <table class="table">
+                    <tr>
+                      <td>
+                        <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade in " id="tab2defaultmenu">
+          Menu 1 Content
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="panel panel-primary pull-bottom">
+      <div class="panel-heading">
+        North Panel
+      </div>
+      <div class="panel-body">
+        <p>
+          This is extremely simplified example of one way of implementing a message bus in Ext using the global Ext.util.Observable instance. The real application would probably implement subject, for example org.saki.app.desktop and message body as an object with
+          data.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ui-layout-south"> South
+    <p>
+      <button onclick="myLayout.toggle('north')">Toggle North Pane</button>
+    </p>
+  </div>
+
+  <div class="ui-layout-east"> East
+    <p>
+      <button onclick="myLayout.close('east')">Close Me</button>
+    </p>
+
+
+  </div>
+
+  <div class="ui-layout-center ">
+    <div class="panel with-nav-tabs panel-default">
+      <div class="panel-heading">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab1default" data-toggle="tab">Form Example</a></li>
+          <li><a href="#tab2default" data-toggle="tab">Buttons</a></li>
+          <li><a href="#tab3default" data-toggle="tab">Modal</a></li>
+          <li><a href="#tab4default" data-toggle="tab">Panel</a></li>
+          <li><a href="#tab5default" data-toggle="tab">Table</a></li>
+          <li><a href="#tab6default" data-toggle="tab">Alerts</a></li>
+          <li><a href="#tab7default" data-toggle="tab">Growls</a></li>
+          <li><a href="#tab8default" data-toggle="tab">Tabs</a></li>
+        </ul>
+      </div>
+      <div class="panel-body">
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="tab1default">
+
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                Form Example
+              </div>
+              <div class="panel-body">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">User Name:</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Url:</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Email Id:</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2">@example.com</span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Amount:</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-addon">.00</span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Select Type:</label>
+                    <div class="col-sm-10">
+                      <select class="form-control">
+                        <option></option>
+                        <option>One</option>
+                        <option>Two</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Remember me</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="tab-pane fade" id="tab2default">
+            <h4>Simple Buttons</h4>
+            <p>
+              <a href="#" class="btn">Default</a>
+              <a href="#" class="btn btn-primary">Primary</a>
+              <a href="#" class="btn btn-info">Info</a>
+              <a href="#" class="btn btn-success">Success</a>
+              <a href="#" class="btn btn-warning">Warning</a>
+              <a href="#" class="btn btn-danger">Danger</a>
+              <a href="#" class="btn btn-inverse">Inverse</a>
+            </p>
+            <h4>Glossy Buttons</h4>
+            <a class="button">button</a>
+            <a href="#" class="button button-green">button button-green</a>
+            <a href="#" class="button button-red">button button-red</a>
+            <h4>Class Buttons</h4>
+
+            <a class="gbutton gbutton-sm" href="#">Download</a>
+            <a class="gbutton" href="#">Submit</a>
+            <a class="gbutton" href="#">Reset</a>
+            <a class="gbutton" href="#">Join The Epic Site Today</a>
+            <a class="gbutton pushed" href="#">Pushed Effect</a>
+
+          </div>
+          <div class="tab-pane fade" id="tab3default">
+
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    Modal Header
+                  </div>
+                  <div class="panel-body">
+                    <p>Some text in the modal.</p>
+                  </div>
+                  <div class="panel-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="tab-pane fade" id="tab4default">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                Default Panel
+              </div>
+              <div class="panel-body">
+                <p>
+                  This is extremely simplified example of one way of implementing a message bus in Ext using the global Ext.util.Observable instance. The real application would probably implement subject, for example org.saki.app.desktop and message body as an object with
+                  data.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="tab5default">
+
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                Table Example
+              </div>
+              <div class="panel-body table-responsive">
+                <table class="table table-hover resizable">
+                  <tr>
+                    <th> Game ID </th>
+                    <th> Status </th>
+                    <th> Players </th>
+                    <th> Turn </th>
+                    <th> Last Turn </th>
+                    <th> control </th>
+                  </tr>
+                  <tr>
+                    <td> 1 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 4/4 </td>
+                    <td> tedbeem </td>
+                    <td> 11/12/13 6:30 PM </td>
+                    <td>
+                      <button class="btn btn-primary"> View </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> 2 </td>
+                    <td> RECRUITING </td>
+                    <td> 4/5 </td>
+                    <td> N/A </td>
+                    <td> 11/12/13 3:10 PM </td>
+                    <td>
+                      <button class="btn btn-primary"> View </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> 13 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 3/3 </td>
+                    <td> D-Halt-on </td>
+                    <td> 11/12/13 9:00 AM </td>
+                    <td>
+                      <button class="btn btn-primary"> View </button>
+                    </td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="tab6default">
+            <button class="btn btn-default" onclick="bootbox.alert('This is the default alert!');">Simple Alert</button>
+            <button class="btn btn-default" onclick="b_confirm();">Confirm</button>
+            <button class="btn btn-default" onclick="b_prompt();">Prompt</button>
+          </div>
+
+          <div class="tab-pane fade" id="tab7default">
+            <button class="btn btn-default" onclick="$.bootstrapGrowl('jQuery Plugins.');">Simple Growl</button>
+            <button class="btn btn-default" onclick=" $.bootstrapGrowl('ASP.Net', { type: 'success' });">success</button>
+            <button class="btn btn-default" onclick=" $.bootstrapGrowl('jQuery Bootstrap Growl Plugin', { type: 'danger' });">Danger</button>
+          </div>
+
+          <div class="tab-pane fade in " id="tab8default">
+            <div class="panel with-nav-tabs panel-default">
+
+              <div class="panel-heading">
+
+                <ul class="nav nav-tabs">
+
+                  <li class="active"><a href="#tab1defaultC" data-toggle="tab">Home</a></li>
+
+                  <li><a href="#tab2defaultC" data-toggle="tab">Menu 1</a></li>
+
+                  <li><a href="#tab3defaultC" data-toggle="tab">Menu 2</a></li>
+
+                  <li><a href="#tab4defaultC" data-toggle="tab">Menu 3</a></li>
+
+                  <li><a href="#tab5defaultC" data-toggle="tab">Menu 4</a></li>
+
+                </ul>
+
+              </div>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="tab1defaultC">
+                    Home Content
+                  </div>
+                  <div class="tab-pane fade in " id="tab2defaultC">
+                    Menu 1 Content
+                  </div>
+                  <div class="tab-pane fade in " id="tab3defaultC">
+                    Menu 2 Content
+                  </div>
+                  <div class="tab-pane fade in " id="tab4defaultC">
+                    Menu 3 Content
+                  </div>
+                  <div class="tab-pane fade in " id="tab5defaultC">
+                    Menu 4 Content
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
